@@ -1,0 +1,10 @@
+<div id="pins" class="transitions-enabled infinite-scroll clearfix">
+  <% @pins.each do |p| %>
+	<div class="box col1 panel panel-default">
+	  <%= link_to (image_tag p.image.url), p %>	
+	  <div class="panel-body">
+	  	<h2><%= link_to p.title, p %></h2>
+	  </div>	
+	</div>	 
+  <% end %>
+</div>
